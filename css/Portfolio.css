@@ -27,8 +27,12 @@ h1{
 .overlay{
 	/* border-bottom-left-radius:50% 20%;
 	border-bottom-right-radius:50% 20%; */
-	background: var(--dark-blue);
-	opacity: .9;
+	/* background: rgb(0, 0, 0); */
+	background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #292b2c, #292c2e); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #232526, #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	opacity: .75;
 	border-radius: 10px;
 	position:absolute;
 	right:0;
@@ -82,7 +86,9 @@ section{
 /* start of main header */
 .main-header {
 	border-radius: 10px;
+	background: #323232;
 	background: url(../assets/main-image1.jpeg);
+	
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
