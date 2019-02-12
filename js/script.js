@@ -1,26 +1,22 @@
 //Typewriter Effect
 new TypeIt('#typewriter', {
-  strings: ['Hello! I\'m Lateef Qaadir Olayinka. I\'m a Front-End Developer based in Oyo state, Nigeria.'],
-  speed: 150,
+  strings: ['Hello! I\'m Lateef Qaadir Olayinka.',
+             'I\'m a Front-End Developer based in Oyo state, Nigeria.'],
+  speed: 50,
+  
   waitUntilVisible: true,
   cursor: false,
   lifeLike: true,
   loop: false
-}).go();
-new TypeIt('.work-page-title', {
-  speed: 100,
-  waitUntilVisible: true,
-  cursor: false,
-  lifeLike: true,
-  loop: false
-}).go();
+}).pause(1000)
+.go();
 
 new TypeIt('#phoneNumber', {
   strings: "+234 9035 394 858",
   waitUntilVisible: true,
-  cursor: false,
+  cursor: true,
   lifeLike: true,
-  speed: 550,
+  speed: 100,
 }).go();
 
 

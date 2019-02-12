@@ -6,13 +6,21 @@
 	--dark-blue: #0d024ee7;
 	--light-blue: #B7DAED;
 }
-
+.header-icon{
+	font-size: 3rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 25px;
+}
 html {
 	scroll-behavior: smooth;
 }
 body{
 	background:#FFF;
-	font-family: 'Asap', sans-serif;
+	/* font-family: 'Karla', sans-serif; */
+	font-family: 'Poppins', sans-serif;
+
 	overflow-x:	hidden;
 	font-size: 15px;
 	color: var(--main-black);
@@ -21,8 +29,9 @@ body{
 a {text-decoration: none !important;}
 h1{
 	letter-spacing: 2px;
-	line-height: 1.8;
-	font-weight: 600;
+	line-height: 1.5;
+	font-weight: 900;
+	text-shadow: 2px 2px 1px rgba(179, 179, 179, 0.719);
 }
 .overlay{
 	/* border-bottom-left-radius:50% 20%;
@@ -82,13 +91,13 @@ section{
 	margin: 15px;
 	border-radius: 10px;
 	min-height: calc(100vh - 40px);
+	position: relative;
 	}
 /* start of main header */
 .main-header {
 	border-radius: 10px;
 	background: #323232;
 	background: url(../assets/main-image1.jpeg);
-	
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -114,7 +123,7 @@ section{
 	text-align: left !important;
 	max-width: 70vw;
 }
-.typewriter:hover{
+#typewriter:hover{
 text-decoration: none;
 cursor: text;
 }
@@ -128,25 +137,24 @@ cursor: text;
 	padding: 40px;
 }
 .work-page-title{
-	font-size: 1.5rem;
 	margin: 8vh 0;
 }
 h6{
 	margin: 4vh 0;
 	text-decoration: none;
 	transition: all .5s ease-in-out;
-	font-size: 2rem;
-	color: var(--dark-blue);
-	line-height: 0;
+	font-size: 1.6rem;
+	color: #000;
+	font-weight: 500;
+	padding: 0 !important;
+	line-height: 1;
 }
 .dotted-line{
-	padding: 10px;
-	font-size: 6rem;
-	letter-spacing: 15px;
+	margin-top: -2vh;
+	padding: 0;
+	font-size: 4rem;
+	letter-spacing: 25px;
 	color: gray;
-}
-h6:hover{
-	opacity: 1;
 }
 .work-list{
 	margin-top: 15vh;
